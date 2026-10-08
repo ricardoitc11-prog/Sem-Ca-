@@ -1,0 +1,6 @@
+{
+  "name": "Hamburgueria Sem Caô",
+  "description": "Landing page e cardápio digital de hambúrgueres artesanais na brasa em Londrina - PR. Sabor visceral, carne Angus e zero enrolação.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

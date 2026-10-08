@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Oswald', sans-serif;
+  --font-sans: 'Roboto', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+
+  --color-primary: #F97316;
+  --color-primary-hover: #EA580C;
+  --color-primary-glow: rgba(249, 115, 22, 0.25);
+
+  --color-surface-bg: #0D0D0D;
+  --color-surface-card: #171717;
+  --color-surface-card-hover: #1F1F1F;
+  --color-surface-border: #2A2A2A;
+  --color-surface-border-subtle: #202020;
+  
+  --color-text-main: #F3F4F6;
+  --color-text-muted: #9CA3AF;
+  --color-text-subtle: #6B7280;
+}
+
+:root {
+  --font-heading: 'Oswald', sans-serif;
+  --font-base: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-base);
+  background-color: #0D0D0D;
+  color: #F3F4F6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F97316;
+}
+
+/* Subtle background noise texture simulation */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+}
+
+.glow-orange {
+  box-shadow: 0 0 35px -5px rgba(249, 115, 22, 0.22);
+}
+
+.glow-orange-subtle {
+  box-shadow: 0 4px 20px -2px rgba(249, 115, 22, 0.12);
+}
